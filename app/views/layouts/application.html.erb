@@ -10,9 +10,11 @@
   </head>
 
   <body>
-  <p class="notice text-success"><%= notice %></p>
-  <p class="alert text-danger"><%= alert %></p>
+    <div class="container">
 
-    <%= yield %>
+      <%= render partial: "shared/messages" %>
+
+      <%= yield %>
+    </div>
   </body>
 </html>
