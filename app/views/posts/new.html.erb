@@ -1,0 +1,14 @@
+<%= form_with(model: @post, url: user_posts_path) do |f| %>
+<div>
+  <%= f.label :title %>
+  <%= f.text_field :title, class: 'form-control w-25'%>
+</div>
+<div>
+  <%= f.label :body %>
+  <%= f.text_field :body, class: 'form-control w-25'%>
+</div>
+
+<%= f.submit 'Create Post', class: 'btn btn-primary mt-3'%>
+
+<%end%>
+

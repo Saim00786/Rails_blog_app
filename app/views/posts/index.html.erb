@@ -1,4 +1,4 @@
-<div class="d-flex align-items-center">
+<div>
   <h1>Welcome</h1>
   <strong >Signed in as: </strong><%= current_user.email %>
 </div>
@@ -7,8 +7,11 @@
 
  <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-danger' %>
 
+<%= link_to "Create New Post", new_user_post_path(current_user), class: 'btn btn-primary' %>
 
 <h1 class="mb-5">Posts</h1>
 
 <%= render partial: "post", collection: @posts %>
+
+<%= get_ten%>
 
